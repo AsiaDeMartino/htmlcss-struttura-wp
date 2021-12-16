@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+header{
+    height: 143px;
+    background-color: #f0c590;
+}
+
+.container{
+    width: 80%;
+    margin: 10px auto;
+}
+
+
+
