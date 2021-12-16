@@ -9,14 +9,103 @@ img{
 }
 
 header{
-    height: 143px;
-    background-color: #f0c590;
+    height: 100px;
+    background-color: #8adc9a;
+    margin-top: 20px;
 }
 
 .container{
-    width: 80%;
-    margin: 10px auto;
+    max-width: 1024px;
+    min-height: 100px;
+    margin: 0 auto;
+}
+
+#section1{
+    background-color: rgb(72, 171, 171);
+    margin-top: 20px;
+}
+
+#section2{
+    background-color: rgb(158, 133, 182);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer .container{
+    background-color: rgb(149, 208, 232);
+}
+
+.riga [class^="col-"]{
+    float: left;
+    padding: 0 20px;
+}
+
+.riga [class^="col-"]:first-child{
+    padding-left: 0;
+}
+
+.riga [class^="col-"]:last-child{
+    padding-right: 0;
+}
+
+.header{
+    padding-bottom: 20px;
+}
+
+.col-25{
+    width: 25%;
+}
+
+.col-50{
+    width: 50%;
+}
+
+.col-100{
+    width: 100%;
+}
+
+.riga::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.modulo{
+    padding: 20px;
+    background-color: rgb(238, 179, 147);
+    border-radius: 5px;
+    color: white;
 }
 
 
+/* debug */
 
+.debug header .container{
+    background-color: rgb(160, 68, 247,0.2);
+}
+
+.debug section {
+    border:1px solid;
+    padding: 20px 10px; 
+}
+
+.debug footer .container {
+    background-color:rgb(105, 178, 206);
+}
+
+.debug #section1 .container{
+    background-color: rgb(93, 133, 176);
+    min-height: 250px;
+}
+.debug #section2 .container{
+    background-color: rgb(175, 165, 238,);
+}
+
+.debug .riga{
+    border: 4px double red;
+    padding: 20px;
+    background-color: rgb(189, 159, 218);
+}
+.debug .riga [class^="col-"] {
+    border:2px solid blue;
+}
